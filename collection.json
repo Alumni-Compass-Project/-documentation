@@ -1,0 +1,1911 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/localhost"
+        }
+    ],
+    "info": {
+        "name": "Laravel API Documentation",
+        "_postman_id": "8f91f67e-b167-4ab8-ab60-f9f584477794",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "GET api\/v1\/health",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/health",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/health"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"success\":true,\"message\":\"Backend service is healthy.\",\"data\":{\"service\":\"Laravel\",\"environment\":\"local\",\"timezone\":\"UTC\"},\"meta\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/v1\/auth\/register",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/auth\/register",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/auth\/register"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"vmqeopfuudtdsufvyvddq\",\"email\":\"kunde.eloisa@example.com\",\"password\":\"4[*UyPJ\\\"}6\",\"role\":\"student\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/v1\/auth\/login",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/auth\/login",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/auth\/login"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"email\":\"qkunze@example.com\",\"password\":\"O[2UZ5ij-e\\\/dl4m{o,\",\"device_name\":\"dqamniihfqcoynlazghdt\",\"remember\":true}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/auth\/me",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/auth\/me",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/auth\/me"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"success\":false,\"message\":\"Unauthenticated.\",\"errors\":[],\"meta\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/v1\/auth\/logout",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/auth\/logout",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/auth\/logout"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/v1\/auth\/otp\/issue",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/auth\/otp\/issue",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/auth\/otp\/issue"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"purpose\":\"password_reset\",\"channel\":\"sms\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/v1\/auth\/otp\/verify",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/auth\/otp\/verify",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/auth\/otp\/verify"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"purpose\":\"login\",\"code\":\"vmqeop\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/profiles\/me",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/profiles\/me",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/profiles\/me"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"success\":false,\"message\":\"Unauthenticated.\",\"errors\":[],\"meta\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PUT api\/v1\/profiles\/me",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/profiles\/me",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/profiles\/me"
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"headline\":\"vmqeopfuudtdsufvyvddq\",\"bio\":\"consequatur\",\"university\":\"mqeopfuudtdsufvyvddqa\",\"graduation_year\":13,\"current_company\":\"niihfqcoynlazghdtqtqx\",\"current_role\":\"bajwbpilpmufinllwloau\",\"country\":\"ydlsmsjuryvojcybzvrby\",\"city\":\"ickznkygloigmkwxphlva\",\"timezone\":\"Pacific\\\/Norfolk\",\"avatar_url\":\"http:\\\/\\\/www.orn.com\\\/quia-et-perferendis-fuga-a-debitis-autem\",\"linkedin_url\":\"http:\\\/\\\/grady.com\\\/autem-deleniti-ut-quibusdam-et-eum.html\",\"github_url\":\"http:\\\/\\\/becker.biz\\\/repellendus-voluptatibus-nihil-aut-nisi-officiis-rerum\",\"website_url\":\"http:\\\/\\\/osinski.com\\\/rem-quia-odit-aut-voluptas-quasi\",\"is_public\":false}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT api\/v1\/profiles\/me\/mentor",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/profiles\/me\/mentor",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/profiles\/me\/mentor"
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"years_experience\":21,\"hourly_rate_cents\":45,\"currency\":\"qeo\",\"max_mentees\":16,\"accepting_new_mentees\":false}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/profiles\/{user_id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/profiles\/:user_id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/profiles\/:user_id",
+                            "variable": [
+                                {
+                                    "id": "user_id",
+                                    "key": "user_id",
+                                    "value": "1",
+                                    "description": "The ID of the user."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 404,
+                            "body": "{\"success\":false,\"message\":\"Profile not found.\",\"errors\":[],\"meta\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/v1\/mentors",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/mentors",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/mentors"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"q\":\"vmqeopfuudtdsufvyvddq\",\"country\":\"amniihfqcoynlazghdtqt\",\"city\":\"qxbajwbpilpmufinllwlo\",\"skills\":[\"auydlsmsjuryvojcybzvr\"],\"min_years_experience\":2,\"max_hourly_rate_cents\":84,\"accepting_new_mentees\":false,\"day_of_week\":0,\"sort\":\"recent\",\"per_page\":3}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"success\":true,\"message\":\"Request completed successfully.\",\"data\":[],\"meta\":{\"pagination\":{\"current_page\":1,\"per_page\":3,\"total\":0,\"last_page\":1}}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/v1\/mentors\/{user_id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/mentors\/:user_id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/mentors\/:user_id",
+                            "variable": [
+                                {
+                                    "id": "user_id",
+                                    "key": "user_id",
+                                    "value": "1",
+                                    "description": "The ID of the user."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 404,
+                            "body": "{\"success\":false,\"message\":\"Mentor not found.\",\"errors\":[],\"meta\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/v1\/bookings\/mentors\/{user_id}\/slots",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bookings\/mentors\/:user_id\/slots",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bookings\/mentors\/:user_id\/slots",
+                            "variable": [
+                                {
+                                    "id": "user_id",
+                                    "key": "user_id",
+                                    "value": "1",
+                                    "description": "The ID of the user."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"success\":true,\"message\":\"Request completed successfully.\",\"data\":[],\"meta\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/v1\/bookings",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bookings",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bookings"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"success\":false,\"message\":\"Unauthenticated.\",\"errors\":[],\"meta\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/v1\/bookings",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bookings",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bookings"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"mentor_user_id\":17,\"starts_at\":\"2026-05-05T20:37:02\",\"ends_at\":\"2107-06-04\",\"agenda\":\"mqeopfuudtdsufvyvddqa\",\"price_cents\":45,\"currency\":\"nii\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/v1\/bookings\/{booking_id}\/confirm",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bookings\/:booking_id\/confirm",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bookings\/:booking_id\/confirm",
+                            "variable": [
+                                {
+                                    "id": "booking_id",
+                                    "key": "booking_id",
+                                    "value": "17",
+                                    "description": "The ID of the booking."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/v1\/bookings\/{booking_id}\/cancel",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bookings\/:booking_id\/cancel",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bookings\/:booking_id\/cancel",
+                            "variable": [
+                                {
+                                    "id": "booking_id",
+                                    "key": "booking_id",
+                                    "value": "17",
+                                    "description": "The ID of the booking."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/v1\/bookings\/{booking_id}\/reschedule",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bookings\/:booking_id\/reschedule",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bookings\/:booking_id\/reschedule",
+                            "variable": [
+                                {
+                                    "id": "booking_id",
+                                    "key": "booking_id",
+                                    "value": "17",
+                                    "description": "The ID of the booking."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"starts_at\":\"2026-05-05T20:37:02\",\"ends_at\":\"2107-06-04\",\"agenda\":\"mqeopfuudtdsufvyvddqa\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/messages\/conversations",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/messages\/conversations",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/messages\/conversations"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"success\":false,\"message\":\"Unauthenticated.\",\"errors\":[],\"meta\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/v1\/messages\/conversations",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/messages\/conversations",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/messages\/conversations"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"type\":\"direct\",\"participant_user_id\":17}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/messages\/conversations\/{conversation_id}\/messages",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/messages\/conversations\/:conversation_id\/messages",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/messages\/conversations\/:conversation_id\/messages",
+                            "variable": [
+                                {
+                                    "id": "conversation_id",
+                                    "key": "conversation_id",
+                                    "value": "17",
+                                    "description": "The ID of the conversation."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 404,
+                            "body": "{\"success\":false,\"message\":\"No query results for model [App\\\\Models\\\\Conversation] 17\",\"errors\":[],\"meta\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/v1\/messages\/conversations\/{conversation_id}\/messages",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/messages\/conversations\/:conversation_id\/messages",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/messages\/conversations\/:conversation_id\/messages",
+                            "variable": [
+                                {
+                                    "id": "conversation_id",
+                                    "key": "conversation_id",
+                                    "value": "17",
+                                    "description": "The ID of the conversation."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"body\":\"vmqeopfuudtdsufvyvddq\",\"message_type\":\"text\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/v1\/messages\/conversations\/{conversation_id}\/read",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/messages\/conversations\/:conversation_id\/read",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/messages\/conversations\/:conversation_id\/read",
+                            "variable": [
+                                {
+                                    "id": "conversation_id",
+                                    "key": "conversation_id",
+                                    "value": "17",
+                                    "description": "The ID of the conversation."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/messages\/notifications",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/messages\/notifications",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/messages\/notifications"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"success\":false,\"message\":\"Unauthenticated.\",\"errors\":[],\"meta\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/v1\/messages\/notifications\/{notification_id}\/read",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/messages\/notifications\/:notification_id\/read",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/messages\/notifications\/:notification_id\/read",
+                            "variable": [
+                                {
+                                    "id": "notification_id",
+                                    "key": "notification_id",
+                                    "value": "17",
+                                    "description": "The ID of the notification."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/admin\/users",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/admin\/users",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/admin\/users"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"success\":false,\"message\":\"Unauthenticated.\",\"errors\":[],\"meta\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/v1\/admin\/mentors",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/admin\/mentors",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/admin\/mentors"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"success\":false,\"message\":\"Unauthenticated.\",\"errors\":[],\"meta\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PUT api\/v1\/admin\/mentors\/{user_id}\/approval",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/admin\/mentors\/:user_id\/approval",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/admin\/mentors\/:user_id\/approval",
+                            "variable": [
+                                {
+                                    "id": "user_id",
+                                    "key": "user_id",
+                                    "value": "1",
+                                    "description": "The ID of the user."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"approval_status\":\"approved\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/admin\/audit-logs",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/admin\/audit-logs",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/admin\/audit-logs"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"success\":false,\"message\":\"Unauthenticated.\",\"errors\":[],\"meta\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/v1\/analytics\/kpis",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/analytics\/kpis",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/analytics\/kpis"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"success\":false,\"message\":\"Unauthenticated.\",\"errors\":[],\"meta\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/v1\/analytics\/snapshots",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/analytics\/snapshots",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/analytics\/snapshots"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "120"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "119"
+                                },
+                                {
+                                    "key": "x-content-type-options",
+                                    "value": "nosniff"
+                                },
+                                {
+                                    "key": "x-frame-options",
+                                    "value": "DENY"
+                                },
+                                {
+                                    "key": "referrer-policy",
+                                    "value": "strict-origin-when-cross-origin"
+                                },
+                                {
+                                    "key": "permissions-policy",
+                                    "value": "geolocation=(), microphone=(), camera=()"
+                                },
+                                {
+                                    "key": "cross-origin-opener-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "cross-origin-resource-policy",
+                                    "value": "same-origin"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"success\":false,\"message\":\"Unauthenticated.\",\"errors\":[],\"meta\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/v1\/ai\/infer",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/ai\/infer",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/ai\/infer"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"operation\":\"match\",\"payload\":[]}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}
